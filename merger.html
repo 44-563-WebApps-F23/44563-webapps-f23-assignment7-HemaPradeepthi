@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>merger of items</title>
+	 <style>
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color: rgb(197, 194, 40);
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color: green;
+	  }
+	}
+</style>
+</head>
+
+<body>
+	<h1 style="color: lightseagreen;"> Hema Pradeepthi builds a merger</h1>
+	<label class="label" for="inputElement" style="color:crimson">Input:</label>
+	<input type="text" class="form-control" name="inputElement" id="inputElement" value="">
+	<br>
+	<br>
+	<div class="flex-container" id="target">
+		<div class="merger">row item 1</div>
+		<div class="merger">row item 2</div>
+		<div class="merger">row item 3</div>
+	</div>
+	<br>
+	<button type="button" class="button" onclick="addEnd()" style="background-color: rgb(211, 209, 79);"><b>Add end</b></button>
+	<button type="button" class="button" onclick="addFront()" style="background-color:lightgray;"><b>Add front</b></button>
+	<button type="button" class="button" onclick="remove()" style="background-color:rgb(211, 209, 79);"><b>Remove</b></button>
+	<button type="button" class="button" onclick="swap()" style="background-color:lightgray;"><b>Swap</b></button>
+</body>
+<script>
+	function addEnd() {
+		let comp = document.createElement("div");
+		let value = document.getElementById("inputElement").value;
+		comp.style.color = "black";
+		comp.innerHTML = value;
+		comp.className = "merger";
+		let cont = document.getElementById('target');
+		cont.appendChild(comp);
+	}
+	function remove() {
+		let mergerElements = document.getElementsByClassName("merger");
+		if (mergerElements.length > 0) {
+			let length = mergerElements.length;
+			let index = Math.floor(length / 2);
+			if (index >= 0 && index < length) {
+				mergerElements[index].remove();
+			}
+		}
+	}
+	function addFront() {
+		let comp = document.createElement("div");
+		let value = document.getElementById("inputElement").value;
+		comp.style.color = "black";
+		comp.innerHTML = value;
+		comp.className = "merger";
+		let cont = document.getElementById("target");
+		cont.insertBefore(comp, cont.firstChild);
+	}
+	function swap() {
+		let mergerElements = document.getElementsByClassName("merger");
+		let cont = document.getElementById("target");
+		let section1 = Math.floor(Math.random() * mergerElements.length);
+		let section2 = Math.floor(Math.random() * mergerElements.length);
+		let innerText1 = document.getElementsByClassName("merger")[section1];
+		let innerText2 = document.getElementsByClassName("merger")[section2];
+		if (mergerElements.length > 1) {
+			let temp = innerText1.innerHTML;
+			innerText1.innerHTML = innerText2.innerHTML;
+			innerText2.innerHTML = temp;
+		}
+	}
+</script>
+</script>
+</html>	

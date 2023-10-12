@@ -20,7 +20,7 @@
 <body>
 
     <div class="container-fluid">
-        <h1 style="font-family: cursive;color:rgb(91, 223, 223)">Find the treasure by Hema Pradeepthi</h1>
+        <h1 style="color:rgb(231, 38, 112)">Find the treasure by Hema Pradeepthi</h1>
 
         <br>
 
@@ -30,195 +30,276 @@
 
             <div class="d-inline p-2 bg-success" style="color: black;" id="penalty">Penalty is zero.</div>
 
-            <div class="d-inline p-2 bg-warning" style="color: black;">Click for help.</div><br><br>
+            <div class="d-inline p-2 bg-warning" style="color: black;" onclick="help()">Click for help.</div><br><br>
 
             <div class="d-inline p-2 bg-danger" style="color: black;" id="help">Help report</div>
 
-            <div class="d-inline p-2 bg-success">Click on the locations to search for treasure, beware the traps</div>
+            <div style="color: darkgreen;">Click on the locations to search for treasure, beware the traps</div>
 
+            <button type="button" onclick="resetGame()">New Game</button>
         </div>
         <br>
         <div class="container-fluid">
-        <div class="row">
-
-          
-
-            <div class="col-sm-1">
-
-                <img src="treasure place.jpg" alt="Treasure Location"
-                style="height: 70px; width: 70px">
-
-            </div>
-
-            <div class="col-sm-1">
-
-                <img src="treasure place.jpg" alt="Treasure Location"
-                style="height: 70px; width: 70px">
-
-            </div>
-
-            <div class="col-sm-1">
-                <img src="treasure place.jpg" alt="Treasure Location"
-                style="height: 70px; width: 70px">
-
-            </div>
-
-            <div class="col-sm-1">
-                <img src="treasure place.jpg" alt="Treasure Location"
-                style="height: 70px; width: 70px">
-
-            </div>
-            <div class="col-sm-1">
-
-                <img src="treasure place.jpg" alt="Treasure Location"
-                style="height: 70px; width: 70px">
-
-            </div>
-        </div>
             <div class="row">
 
-               
-    
                 <div class="col-sm-1">
-                    <img src="treasure place.jpg" alt="Treasure Location"
-                    style="height: 70px; width: 70px">
-    
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic1"
+                        onclick="check(0)">
+
                 </div>
-    
+
                 <div class="col-sm-1">
-    
-                    <img src="treasure place.jpg" alt="Treasure Location"
-                    style="height: 70px; width: 70px">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic2"
+                        onclick="check(1)">
+
                 </div>
-    
+
                 <div class="col-sm-1">
-    
-                    <img src="treasure place.jpg" alt="Treasure Location"
-                    style="height: 70px; width: 70px">
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic3"
+                        onclick="check(2)">
+
                 </div>
-    
+
                 <div class="col-sm-1">
-                    <img src="treasure place.jpg" alt="Treasure Location"
-                    style="height: 70px; width: 70px">
-    
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic4"
+                        onclick="check(3)">
+
                 </div>
                 <div class="col-sm-1">
-    
-                    <img src="treasure place.jpg" alt="Treasure Location"
-                    style="height: 70px; width: 70px">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic5"
+                        onclick="check(4)">
+
                 </div>
             </div>
-                <div class="row">
+            <div class="row">
 
-                  
-        
-                    <div class="col-sm-1">
-        
-                        <img src="treasure place.jpg" alt="Treasure Location"
-                        style="height: 70px; width: 70px">
-        
-                    </div>
-        
-                    <div class="col-sm-1">
-        
-                        <img src="treasure place.jpg" alt="Treasure Location"
-                        style="height: 70px; width: 70px">
-                    </div>
-        
-                    <div class="col-sm-1">
-        
-                        <img src="treasure place.jpg" alt="Treasure Location"
-                        style="height: 70px; width: 70px">
-        
-                    </div>
-        
-                    <div class="col-sm-1">
-        
-                        <img src="treasure place.jpg" alt="Treasure Location"
-                        style="height: 70px; width: 70px">
-        
-                    </div>
-                    <div class="col-sm-1">
-        
-                        <img src="treasure place.jpg" alt="Treasure Location"
-                        style="height: 70px; width: 70px">
-        
-                    </div>
+
+
+                <div class="col-sm-1">
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic6"
+                        onclick="check(5)">
+
                 </div>
-                    <div class="row">
 
-                        <div class="col-sm-1">
-                            <img src="treasure place.jpg" alt="Treasure Location"
-                            style="height: 70px; width: 70px">
-                        </div>
-            
-                        <div class="col-sm-1">
-            
-                            <img src="treasure place.jpg" alt="Treasure Location"
-                            style="height: 70px; width: 70px">
-            
-                        </div>
-            
-                        <div class="col-sm-1">
-            
-                            <img src="treasure place.jpg" alt="Treasure Location"
-                            style="height: 70px; width: 70px">
-            
-                        </div>
-            
-                        <div class="col-sm-1">
-            
-                            <img src="treasure place.jpg" alt="Treasure Location"
-                            style="height: 70px; width: 70px">
-                        </div>
-            
-                        <div class="col-sm-1">
-            
-                            <img src="treasure place.jpg" alt="Treasure Location"
-                            style="height: 70px; width: 70px">
-            
-                        </div>
-                    </div>
-                        <div class="row">
+                <div class="col-sm-1">
 
-                           
-                
-                            <div class="col-sm-1">
-                
-                                <img src="treasure place.jpg" alt="Treasure Location"
-                                style="height: 70px; width: 70px">
-                
-                            </div>
-                
-                            <div class="col-sm-1">
-                
-                                <img src="treasure place.jpg" alt="Treasure Location"
-                                style="height: 70px; width: 70px">
-                
-                            </div>
-                
-                            <div class="col-sm-1">
-                
-                                <img src="treasure place.jpg" alt="Treasure Location"
-                                style="height: 70px; width: 70px">
-                
-                            </div>
-                
-                            <div class="col-sm-1">
-                
-                                <img src="treasure place.jpg" alt="Treasure Location"
-                                style="height: 70px; width: 70px">
-                
-                            </div>
-                            <div class="col-sm-1">
-                
-                                <img src="treasure place.jpg" alt="Treasure Location"
-                                style="height: 70px; width: 70px">
-                            </div>
-                        </div>
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic7"
+                        onclick="check(6)">
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic8"
+                        onclick="check(7)">
+                </div>
+
+                <div class="col-sm-1">
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic9"
+                        onclick="check(8)">
+
+                </div>
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic10"
+                        onclick="check(9)">
+                </div>
+            </div>
+            <div class="row">
+
+
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic11"
+                        onclick="check(10)">
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic12"
+                        onclick="check(11)">
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic13"
+                        onclick="check(12)">
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic14"
+                        onclick="check(13)">
+
+                </div>
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic15"
+                        onclick="check(14)">
+
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-1">
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic16"
+                        onclick="check(15)">
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic17"
+                        onclick="check(16)">
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic18"
+                        onclick="check(17)">
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic19"
+                        onclick="check(18)">
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic20"
+                        onclick="check(19)">
+
+                </div>
+            </div>
+            <div class="row">
+
+
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic21"
+                        onclick="check(20)">
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic22"
+                        onclick="check(21)">
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic23"
+                        onclick="check(22)">
+
+                </div>
+
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic24"
+                        onclick="check(23)">
+
+                </div>
+                <div class="col-sm-1">
+
+                    <img src="treasure place.jpg" alt="Treasure Location" style="height: 70px; width: 70px" id="pic25"
+                        onclick="check(24)">
+                </div>
+            </div>
         </div>
-            
+        <script>
+            const ids = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10",
+                "pic11", "pic12", "pic13", "pic14", "pic15", "pic16", "pic17", "pic18", "pic19",
+                "pic20", "pic21", "pic22", "pic23", "pic24", "pic25"];
 
+            let checkCount = 0;
+            let penalty = 0;
+            let lastCheck = 0;
+            let treasureLocation = 5;
+            let trapLocation = 18;
+            let gameOver = false;
+
+            function check(position) {
+                if (gameOver) {
+                    return;
+                }
+
+                var picId = ids[position];
+                var picElement = document.getElementById(picId);
+                if (position === treasureLocation) {
+                    picElement.src = 'treasure.jpg';
+                } else if (position === trapLocation) {
+                    picElement.src = 'treasure trap.jpg';
+                } else {
+                    picElement.src = 'pirates.png';
+                }
+                if ((position != treasureLocation) && (position != trapLocation)) {
+                    penalty++;
+                }
+                checkCount++;
+
+                const locationsElement = document.getElementById('locations');
+                locationsElement.textContent = `Locations: ${checkCount}`;
+
+                if (position === treasureLocation) {
+                    gameOver = true;
+                    penalty = penalty - 3;
+                }
+                if (position === trapLocation) {
+                    gameOver = true;
+                    penalty = penalty + 4;
+                }
+
+                const penaltyElement = document.getElementById('penalty');
+                penaltyElement.textContent = `Penalty: ${penalty}`;
+
+
+                lastCheck = position;
+            }
+
+            function help() {
+                let rowLastLocation = lastCheck / 5;
+                let colLastLocation = lastCheck % 5;
+                if (lastCheck == 0 || lastCheck == 6 || lastCheck == 10) {
+                    document.getElementById("help").innerHTML = "Can Smell It";
+                }
+                else if (lastCheck == 1 || lastCheck == 7 || lastCheck == 11 || lastCheck == 15) {
+                    document.getElementById("help").innerHTML = "Close Matie";
+                }
+                else {
+                    document.getElementById("help").innerHTML = "Step Faster";
+                }
+                penalty = penalty + 2;
+                document.getElementById("penalty").innerHTML = "Penalty is " + penalty;
+            }
+
+            function resetGame() {
+                let treasureLocation = Math.floor(Math.random() * 24);
+                //console.log(treasureLocation)
+                let trapLocation = Math.floor(Math.random() * 24);
+                document.getElementById("locations").textContent = "Number of locations checked is 0";
+                document.getElementById("penalty").textContent = "penalty is 0";
+                for (let i = 1; i <= 25; i++) {
+                    if (i == treasureLocation) {
+                        document.getElementById('pic'+ i).src = "treasure.jpg";
+                    } else if (i == trapLocation) {
+                        document.getElementById('pic'+ i).src = "treasure trap.jpg";
+                    }else{
+                        document.getElementById('pic'+ i).src = "pirates.png";
+                    }
+                }
+
+            }
+        </script>
 
 </body>
 

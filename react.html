@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>speed check</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <h2 style="color: rgb(124, 196, 53);">Hema Pradeepthi's speed check</h2>
+
+  <div id="target" style="background-color:aquamarine;">Your time: -</div>
+  <div id="counter"style="background-color:aqua">Count: -</div>
+  <button id="startButton" onclick="startTime()" style="background-color:rgb(146, 204, 88);">Start Timer</button>
+  <button id="reactButton" onclick="recordTime()"style="background-color:lawngreen">React</button>
+  <script>
+    function bounsReact(){
+    c = Math.floor(Math.random() * 8) + 2
+    for(let i = 0; i< c;i++) 
+      setTimeout(function (c) {
+            return function () {
+                document.getElementById("counter").innerHTML = c;
+            };
+        }(i), (8 - i) * 1000);
+    
+  }
+    let reactTime = undefined;
+    function recordTime() {
+      reactTime = Date.now();
+      console.log("React time recorded:", reactTime);
+    }
+    function startTime() {
+      for (let i = 0; i < 9; i++) {
+        setTimeout(() => {
+          document.getElementById("counter").innerHTML = i;}, (8 - i) * 1000);
+        }
+      setTimeout(() => {
+        if (reactTime == undefined) {
+          document.getElementById("target").innerHTML = "Too Slow";
+        }
+
+        else {
+
+          endTime = Date.now();
+          elapsedTime = endTime - reactTime;
+
+          document.getElementById("target").innerHTML = "Time was " + elapsedTime + "ms";
+        }
+      }, 8000);
+    }
+  </script>
+
+</body>
+
+</html>
